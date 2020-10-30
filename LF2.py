@@ -11,8 +11,8 @@ def lambda_handler(event, context):
     dynamodb = boto3.resource('dynamodb')
     queue_url = "https://sqs.us-west-2.amazonaws.com/884631752477/diningQueue"
 
-    access_key = "AKIA436BJJ4ORHOTV3MC"
-    secret_key = "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"
+    access_key = "****************"
+    secret_key = "*******************************"
     host = "search-test-es-55h2alnoth4r7l4hkldymkn7m4.us-west-2.es.amazonaws.com"
     region = 'us-west-2'
     service = "es"
