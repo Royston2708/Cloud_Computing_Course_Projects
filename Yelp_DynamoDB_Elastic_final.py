@@ -23,7 +23,7 @@ except ImportError:
 
 
 # Using the Yelp API along with our yelp API key
-API_KEY= 'VdaLy_X4ZCtGeSOjP4HDDEMVc1IO09nceLcLKHpZnIXgbonf9DdCeE-56naq2Q3H4Kk8hIRXtc6c-FKmjYg5Ey-BO39W3s7J4LxBLoZ8xNHOEb1MJKh4-PKKMRWWX3Yx'
+API_KEY= '************************************************************************************************************' # Removing API Key details.  
 
 
 # API constants, you shouldn't have to change these.
@@ -67,8 +67,8 @@ def flatten(d, parent_key='', sep='_'):
             items.append((new_key, v))
     return dict(items)
 
-access_key = "AKIAIRC5YOV3GKGLULXA"
-secret_key = "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"
+access_key = "*******************"
+secret_key = "*********************************"
 
 dynamodb = boto3.resource('dynamodb', region_name='us-west-2', aws_access_key_id=access_key,  aws_secret_access_key = secret_key)
 table = dynamodb.Table('yelp-restaurants')
@@ -140,8 +140,8 @@ for entry in final_list:
 
 # Inserting into ElasticSearch DB
 # Using Royston Credentials as he is the Master User
-access_key = "AKIA436BJJ4ORHOTV3MC"
-secret_key = "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"
+access_key = "************************"
+secret_key = "*************************************"
 
 host = "search-test-es-55h2alnoth4r7l4hkldymkn7m4.us-west-2.es.amazonaws.com"
 region = 'us-west-2'
