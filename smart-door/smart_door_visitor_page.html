@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html5>
+<head>
+<title>Page Title</title>
+<style>
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>Smart Door Visitor Creation</h1>
+
+<form action="https://qyary38uhd.execute-api.us-east-1.amazonaws.com/test" method="post">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="lname">Phone  Number:</label><br>
+  <input type="text" id="phone_num" name="phone_num">
+  <input type="hidden" id="faceID" name="faceID">
+  <script>
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const faceID = urlParams.get('faceID')
+  document.getElementById("faceID").value = faceID;
+  </script>
+  <input type="submit" value="Submit">
+</form>
+<p>Please insert the name and phone number of the person.</p>
+<img src="avatar.png" alt="Avatar" style="width:200px">
+
+
+
+</body>
+</html5>

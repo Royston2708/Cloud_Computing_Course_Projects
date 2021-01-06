@@ -1,0 +1,20 @@
+{
+       "Name": "smart-door-kvsx",
+       "Input": {
+              "KinesisVideoStream": {
+                     "Arn": "arn:aws:kinesisvideo:us-east-1:671455739102:stream/kvs-x/1606190631289"
+              }
+       },
+       "Output": {
+              "KinesisDataStream": {
+                     "Arn": "arn:aws:kinesis:us-east-1:671455739102:stream/smart-door-kdsx"
+              }
+       },
+       "RoleArn": "arn:aws:iam::671455739102:role/smart-door-rekognition",
+       "Settings": {
+              "FaceSearch": {
+                     "CollectionId": "new-smart-door-faces",
+                     "FaceMatchThreshold": 85.5
+              }
+       }
+}
